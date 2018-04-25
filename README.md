@@ -1,6 +1,6 @@
-<img src='imgs/teaser.png' width="1200px"/>
-
 # Non-staionary texture synthesis using adversarial expansions
+
+<img src='imgs/teaser.png' width="1200px"/>
 
 This is the official code of paper [_Non-staionary texture synthesis using adversarial expansions_](http://vcc.szu.edu.cn/research/2018/TexSyn).
 
