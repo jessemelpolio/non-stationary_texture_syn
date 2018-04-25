@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python test_recurrent.py --dataroot ./datasets/half/72/test --name 72_half_style_14x14 --which_epoch 66000 --model test --which_model_netG resnet_2x_6blocks --which_direction AtoB --dataset_mode single --norm batch --resize_or_crop none --gpu_ids 1
