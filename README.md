@@ -1,4 +1,5 @@
 <br><br><br>
+<img src='imgs/teaser.png' width="1200px"/>
 
 # Non-staionary texture synthesis using adversarial expansions
 
@@ -6,10 +7,12 @@ This is the official code of paper [_Non-staionary texture synthesis using adver
 
 This code was mainly adapted by [Zhen Zhu](https://github.com/jessemelpolio) on the basis of the repository [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
+<img src='imgs/architecture.png' width="1200px"/>
+
 If you use this code for your research, please cite:
 
 Non-staionary texture synthesis using adversarial expansions  
-[Yang Zhou*](http://mclab.eic.hust.edu.cn/~zhouyang/), [Zhen Zhu*](https://github.com/jessemelpolio), [Xiang Bai](http://mclab.eic.hust.edu.cn/~xbai/), [Dani Lischinski](http://www.cs.huji.ac.il/~danix/), [Daniel Cohen-Or](http://www.cs.tau.ac.il/~dcor/pubs.html), [Hui Huang](http://vcc.szu.edu.cn/~huihuang)  
+[Yang Zhou](http://mclab.eic.hust.edu.cn/~zhouyang/)\*, [Zhen Zhu](https://github.com/jessemelpolio)\*, [Xiang Bai](http://mclab.eic.hust.edu.cn/~xbai/), [Dani Lischinski](http://www.cs.huji.ac.il/~danix/), [Daniel Cohen-Or](http://www.cs.tau.ac.il/~dcor/pubs.html), [Hui Huang](http://vcc.szu.edu.cn/~huihuang)  
 In SIGGRAPH 2018. (* equal contributions)
 
 
