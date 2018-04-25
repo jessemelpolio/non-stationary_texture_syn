@@ -1,4 +1,3 @@
-<br><br><br>
 <img src='imgs/teaser.png' width="1200px"/>
 
 # Non-staionary texture synthesis using adversarial expansions
