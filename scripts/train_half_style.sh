@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python train.py --dataroot ./datasets/half --name 6_half_gan_style --no_lsgan --model half_style --no_flip --which_model_netG resnet_2x_6blocks --which_direction AtoB --lambda_A 100 --dataset_mode half_crop --norm batch --pool_size 0 --resize_or_crop no --niter_decay 100000 --niter 100000 --save_epoch_freq 1000 --gpu_ids 1
+python train.py --dataroot ./datasets/half/202 --name 202_half_style_14x14 --use_style --no_flip --no_lsgan --padding_type replicate --model half_style --which_model_netG resnet_2x_6blocks --which_model_netD n_layers --n_layers_D 4 --which_direction AtoB --lambda_A 100 --dataset_mode half_crop --norm batch --pool_size 0 --resize_or_crop no --niter_decay 50000 --niter 50000 --save_epoch_freq 2000 --gpu_ids 1

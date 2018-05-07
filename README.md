@@ -72,11 +72,11 @@ In folder `options`, all hyperparameters are specified here. If you want to spec
 
 Folder `scripts` contains scripts used for training and testing. To train or test a model, use commands like `sh scripts/train_half_style.sh`. Go into these files to see how to specify some hyper parameters. `production` scripts are typically used in production period in our paper preparation.
 
-Folder `util` contains some scripts to visualize internal layers inside network(cnn-vis.py), generate perlin noise (perlin2d.py), generate random tile (random_tile.py) and some other useful scripts.
+Folder `util` contains some scripts to generate perlin noise (perlin2d.py), generate random tile (random_tile.py), which are useful to replicate our paper's results. Some other useful scripts are also included.
 
-### Train and test
+### Train, test and visualize
 
-Folder `scripts` contain scripts used for training and testing. To train or test a model, use commands like `sh scripts/train_half_style.sh`. Go into these files to see how to specify some hyper parameters. 
+Folder `scripts` contain scripts used for training and testing. To train or test a model, use commands like `sh scripts/train_half_style.sh`. Go into these files to see how to specify some hyper parameters. To visualize the internal layers inside network, especially the residual blocks, you can use script `visualize_layers.sh`, as shown in our paper.
 
 
 ### Cite
