@@ -3,6 +3,7 @@ checkpoints/
 results/
 build/
 dist/
+*.json
 *.DS_Store
 *.pyc
 torch.egg-info/

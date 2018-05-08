@@ -180,6 +180,27 @@ class Visualizer():
             links.append(image_name)
         webpage.add_images(ims, txts, links, width=self.win_size)
 
+    def save_images_epoch(self, webpage, visuals, image_path, epoch):
+        image_dir = webpage.get_image_dir()
+        short_path = ntpath.basename(image_path[0])
+        name = os.path.splitext(short_path)[0]
+
+        webpage.add_header(name)
+        ims = []
+        txts = []
+        links = []
+
+        for label, image_numpy in visuals.items():
+            image_name = '%s_%s_%d.png' % (name, label, epoch)
+            save_path = os.path.join(image_dir, image_name)
+            print(save_path)
+            util.save_image(image_numpy[0].astype(np.uint8), save_path)
+
+            ims.append(image_name)
+            txts.append(label)
+            links.append(image_name)
+        webpage.add_images(ims, txts, links, width=self.win_size)
+
     # save image to the disk
     def save_recurrent_images(self, webpage, visuals, image_path):
         image_dir = webpage.get_image_dir()

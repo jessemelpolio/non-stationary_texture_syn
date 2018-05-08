@@ -8,33 +8,6 @@ import PIL
 from pdb import set_trace as st
 import random
 
-# class HalfDataset(BaseDataset):
-#     def initialize(self, opt):
-#         self.opt = opt
-#         self.root = opt.dataroot
-#         self.dir = os.path.join(opt.dataroot, opt.phase)
-#         self.paths = make_dataset(self.dir)
-#         self.paths = sorted(self.paths)
-#         self.size = len(self.paths)
-#         self.fineSize = opt.fineSize
-#         self.transform_A, self.transform_B = get_half_transform(opt)
-#
-#     def __getitem__(self, index):
-#         path = self.paths[index % self.size]
-#         B_img = Image.open(path).convert('RGB')
-#
-#         A_img = self.transform_A(B_img)
-#         B_img = self.transform_B(B_img)
-#
-#         return {'A': A_img, 'B': B_img,
-#                 'A_paths': path, 'B_paths': path}
-#
-#     def __len__(self):
-#         return self.size
-#
-#     def name(self):
-#         return 'HalfDataset'
-
 class HalfDataset(BaseDataset):
     def initialize(self, opt):
         self.opt = opt
@@ -49,10 +22,10 @@ class HalfDataset(BaseDataset):
     def __getitem__(self, index):
         path = self.paths[index % self.size]
         B_img = Image.open(path).convert('RGB')
-        if self.opt.isTrain and not self.opt.no_flip:     
-            if random.random() > 0.5:         
-                B_img = B_img.transpose(Image.FLIP_LEFT_RIGHT) 
-            else:     
+        if self.opt.isTrain and not self.opt.no_flip:
+            if random.random() > 0.5:
+                B_img = B_img.transpose(Image.FLIP_LEFT_RIGHT)
+            else:
                 B_img = B_img
                 
         w, h = B_img.size
