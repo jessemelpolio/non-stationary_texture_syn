@@ -191,7 +191,7 @@ class Visualizer():
         links = []
 
         for label, image_numpy in visuals.items():
-            image_name = '%s_%s_%d.png' % (name, label, epoch)
+            image_name = '%s_%s_%s.png' % (name, label, epoch)
             save_path = os.path.join(image_dir, image_name)
             print(save_path)
             util.save_image(image_numpy[0].astype(np.uint8), save_path)

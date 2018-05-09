@@ -44,6 +44,6 @@ def test_func(opt_train, epoch='latest'):
 	    visuals = model.get_current_visuals()
 	    img_path = model.get_image_paths()
 	    print('process image... %s' % img_path)
-	    visualizer.save_images_epoch(webpage, visuals, img_path)
+	    visualizer.save_images_epoch(webpage, visuals, img_path, epoch)
 
 	webpage.save()
