@@ -3,8 +3,10 @@ from options.train_options import TrainOptions
 from data.data_loader import CreateDataLoader
 from models.models import create_model
 from util.visualizer import Visualizer
+from util import html
 import copy
 from test_function import test_func
+import os
 
 opt = TrainOptions().parse()
 data_loader = CreateDataLoader(opt)
@@ -15,6 +17,11 @@ print('#training images = %d' % dataset_size)
 model = create_model(opt)
 visualizer = Visualizer(opt)
 total_steps = 0
+
+opt.results_dir = os.path.join(os.path.dirname(opt.checkpoints_dir), 'results')
+web_dir = os.path.join(opt.results_dir, opt.name)
+webpage = html.HTML(web_dir, 'Experiment = %s' % (opt.name))
+
 
 for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
     epoch_start_time = time.time()
@@ -48,14 +55,13 @@ for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
             print('saving the latest model (epoch %d, total_steps %d)' %
                   (epoch, total_steps))
             model.save('latest')
-            test_func(opt, epoch='latest')
 
     if epoch % opt.save_epoch_freq == 0:
         print('saving the model at the end of epoch %d, iters %d' %
               (epoch, total_steps))
         model.save('latest')
         model.save(epoch)
-        test_func(opt, epoch=str(epoch))
+        test_func(opt, webpage, epoch=str(epoch))
 
     # print('End of epoch %d / %d \t Time Taken: %d sec' %
     #       (epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))

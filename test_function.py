@@ -9,7 +9,7 @@ import copy
 
 # This function is used to testing during training. Results are stored in the opt.results_dir. 
 # We do not need to run test script again.
-def test_func(opt_train, epoch='latest'):
+def test_func(opt_train, webpage, epoch='latest'):
 	opt = copy.deepcopy(opt_train)
 	print(opt)
 	# specify the directory to save the results during training
@@ -33,8 +33,8 @@ def test_func(opt_train, epoch='latest'):
 	visualizer = Visualizer(opt)
 	# create website
 	# web_dir = os.path.join(opt.results_dir, opt.name, '%s_%s' % (opt.phase, opt.which_epoch))
-	web_dir = os.path.join(opt.results_dir, opt.name)
-	webpage = html.HTML(web_dir, 'Experiment = %s, Phase = %s, Epoch = %s' % (opt.name, opt.phase, opt.which_epoch))
+	# web_dir = os.path.join(opt.results_dir, opt.name)
+	# webpage = html.HTML(web_dir, 'Experiment = %s, Phase = %s, Epoch = %s' % (opt.name, opt.phase, opt.which_epoch))
 	# test
 	for i, data in enumerate(dataset):
 	    if i >= opt.how_many:

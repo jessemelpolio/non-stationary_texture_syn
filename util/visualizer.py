@@ -185,7 +185,7 @@ class Visualizer():
         short_path = ntpath.basename(image_path[0])
         name = os.path.splitext(short_path)[0]
 
-        webpage.add_header(name)
+        webpage.add_header('%s Epoch: %s' % (name, epoch))
         ims = []
         txts = []
         links = []
