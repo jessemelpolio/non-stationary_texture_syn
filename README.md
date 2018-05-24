@@ -26,7 +26,7 @@ This code is tested under Ubuntu 14.04 and 16.04. The total project can be well 
 
 ### Preparations
 
-Please run `download_pretrained_models.sh` first to make a new folder `Models` and then download the VGG19 model pretrained on ImageNet to this folder. 
+Please run `download_pretrained_models.sh` first to make a new folder `Models` and then download the VGG19 model pre-trained on ImageNet to this folder. The pre-trained VGG19 model is used to calculate style loss.
 
 ### Data
 
