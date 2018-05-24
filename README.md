@@ -17,7 +17,7 @@ In SIGGRAPH 2018. (* equal contributions)
 
 ### Requirements
 
-The total project can be well functioned under the following environment: 
+This code is tested under Ubuntu 14.04 and 16.04. The total project can be well functioned under the following environment: 
 
 * python-2.7 
 * pytorch-0.3.0 with cuda correctly specified
@@ -26,7 +26,7 @@ The total project can be well functioned under the following environment:
 
 ### Preparations
 
-Please run `download_pretrained_models` first to make a new folder `Models` and then download the VGG19 model pretrained on ImageNet to this folder. 
+Please run `download_pretrained_models.sh` first to make a new folder `Models` and then download the VGG19 model pretrained on ImageNet to this folder. 
 
 ### Data
 
