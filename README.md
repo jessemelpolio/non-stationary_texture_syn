@@ -62,15 +62,15 @@ The dataset structure is recommended as:
 
 ### Architecture of the repository
 
-Inside the main folder, `train.py` is used to train a model as described in our paper. `test.py` is used to test with the original image(result is 2x the size of the input). `test_recurrent.py` is used for extreme expansions.
+Inside the main folder, `train.py` is used to train a model as described in our paper. `test.py` is used to test with the original image(result is 2x the size of the input). `test_recurrent.py` is used for extreme expansions. `cnn-vis.py` is used to visualize the internal layers of our generator. The residual blocks visualization shown in our paper are generated through `cnn-vis.py`.
 
 In folder `data`, file `custom_dataset_data_loader` specified five dataset mode: `aligned`, `unaligned`, `single` and `half_crop`. Generally, we use `single` for testing and `half_crop` for training. 
 
 In folder `models`, two files are of great importance: `models.py` and `networks.py`, please carefully check it before using it. `half_gan_style.py` is the major model we use in our paper. Some utilities are implemented in `vgg.py`.
 
-In folder `options`, all hyperparameters are specified here. If you want to specialize different types of experiments, please change them accordingly.
+In folder `options`, all hyperparameters are defined here. Go to this folder to see the meaning of every hyperparameter.
 
-Folder `scripts` contains scripts used for training and testing. To train or test a model, use commands like `sh scripts/train_half_style.sh`. Go into these files to see how to specify some hyper parameters. `production` scripts are typically used in production period in our paper preparation.
+Folder `scripts` contains scripts used for training and testing. To train or test a model, use commands like `sh scripts/train_half_style.sh`. Go into these files to see how to specify some hyper parameters.
 
 Folder `util` contains some scripts to generate perlin noise (perlin2d.py), generate random tile (random_tile.py), which are useful to replicate our paper's results. Some other useful scripts are also included.
 
