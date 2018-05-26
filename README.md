@@ -1,4 +1,4 @@
-# Non-staionary texture synthesis using adversarial expansions
+# Non-stationary texture synthesis using adversarial expansions
 
 <img src='imgs/teaser.png' width="1200px"/>
 
@@ -10,7 +10,7 @@ This code was mainly adapted by [Zhen Zhu](https://github.com/jessemelpolio) on 
 
 If you use this code for your research, please cite:
 
-Non-staionary texture synthesis using adversarial expansions  
+Non-stationary texture synthesis using adversarial expansions  
 [Yang Zhou](http://mclab.eic.hust.edu.cn/~zhouyang/)\*, [Zhen Zhu](https://github.com/jessemelpolio)\*, [Xiang Bai](http://mclab.eic.hust.edu.cn/~xbai/), [Dani Lischinski](http://www.cs.huji.ac.il/~danix/), [Daniel Cohen-Or](http://www.cs.tau.ac.il/~dcor/pubs.html), [Hui Huang](http://vcc.szu.edu.cn/~huihuang)  
 In SIGGRAPH 2018. (* equal contributions)
 
