@@ -1,8 +1,8 @@
-# Non-staionary texture synthesis using adversarial expansions
+# Non-stationary texture synthesis using adversarial expansions
 
 <img src='imgs/teaser.png' width="1200px"/>
 
-This is the official code of paper [_Non-staionary texture synthesis using adversarial expansions_](http://vcc.szu.edu.cn/research/2018/TexSyn).
+This is the official code of paper [_Non-stationary texture synthesis using adversarial expansions_](http://vcc.szu.edu.cn/research/2018/TexSyn).
 
 This code was mainly adapted by [Zhen Zhu](https://github.com/jessemelpolio) on the basis of the repository [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
@@ -10,8 +10,8 @@ This code was mainly adapted by [Zhen Zhu](https://github.com/jessemelpolio) on 
 
 If you use this code for your research, please cite:
 
-Non-staionary texture synthesis using adversarial expansions  
-[Yang Zhou](https://zhouyangvcc.github.io)\*, [Zhen Zhu](https://github.com/jessemelpolio)\*, [Xiang Bai](http://mclab.eic.hust.edu.cn/~xbai/), [Dani Lischinski](http://www.cs.huji.ac.il/~danix/), [Daniel Cohen-Or](http://www.cs.tau.ac.il/~dcor/pubs.html), [Hui Huang](http://vcc.szu.edu.cn/~huihuang)  
+Non-stationary texture synthesis using adversarial expansions  
+[Yang Zhou](http://mclab.eic.hust.edu.cn/~zhouyang/)\*, [Zhen Zhu](https://github.com/jessemelpolio)\*, [Xiang Bai](http://mclab.eic.hust.edu.cn/~xbai/), [Dani Lischinski](http://www.cs.huji.ac.il/~danix/), [Daniel Cohen-Or](http://www.cs.tau.ac.il/~dcor/pubs.html), [Hui Huang](http://vcc.szu.edu.cn/~huihuang)  
 In SIGGRAPH 2018. (* equal contributions)
 
 
@@ -98,6 +98,5 @@ year = {2018},
 ### Acknowledgements
 
 The code is based on project [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). We sincerely thank for their great work.
-
 
 
